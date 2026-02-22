@@ -295,7 +295,7 @@ export default function App() {
                   className="absolute -top-10 -right-6 glass p-6 rounded-2xl border-neon-cyan/30 shadow-[0_0_40px_rgba(0,242,255,0.2)]"
                 >
                   <div className="text-xs text-white/50 uppercase font-bold mb-1">Total Profit</div>
-                  <div className="text-3xl font-display font-bold text-neon-cyan">+3,533.38%</div>
+                  <div className="text-3xl font-display font-bold text-neon-cyan">+3,633.38%</div>
                 </motion.div>
                 
                 <motion.div 
