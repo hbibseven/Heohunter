@@ -44,12 +44,12 @@ import {
 // --- Mock Data for Backtest ---
 const backtestData = Array.from({ length: 50 }, (_, i) => {
   const base = 10000;
-  const growth = i * 1700;
-  const volatility = Math.sin(i * 0.5) * 2000;
+  const growth = i * 7400; // Massive growth to reach ~373k
+  const volatility = Math.sin(i * 0.8) * 5000;
   return {
     date: `Point ${i + 1}`,
     balance: base + growth + volatility,
-    equity: base + growth + volatility - (Math.random() * 1000)
+    equity: base + growth + volatility - (Math.random() * 8000)
   };
 });
 
@@ -295,7 +295,7 @@ export default function App() {
                   className="absolute -top-10 -right-6 glass p-6 rounded-2xl border-neon-cyan/30 shadow-[0_0_40px_rgba(0,242,255,0.2)]"
                 >
                   <div className="text-xs text-white/50 uppercase font-bold mb-1">Total Profit</div>
-                  <div className="text-3xl font-display font-bold text-neon-cyan">+850.67%</div>
+                  <div className="text-3xl font-display font-bold text-neon-cyan">+3,533.38%</div>
                 </motion.div>
                 
                 <motion.div 
@@ -304,7 +304,7 @@ export default function App() {
                   className="absolute -bottom-10 -left-6 glass p-6 rounded-2xl border-neon-purple/30 shadow-[0_0_40px_rgba(188,19,254,0.2)]"
                 >
                   <div className="text-xs text-white/50 uppercase font-bold mb-1">Win Rate</div>
-                  <div className="text-3xl font-display font-bold text-neon-purple">71.58%</div>
+                  <div className="text-3xl font-display font-bold text-neon-purple">79.41%</div>
                 </motion.div>
               </div>
             </motion.div>
@@ -345,12 +345,12 @@ export default function App() {
               <div className="flex gap-4">
                 <div className="text-right">
                   <div className="text-xs text-white/40 uppercase font-bold">Net Profit</div>
-                  <div className="text-2xl font-display font-bold text-neon-cyan">$85,067.62</div>
+                  <div className="text-2xl font-display font-bold text-neon-cyan">$363,338.60</div>
                 </div>
                 <div className="w-px h-10 bg-white/10" />
                 <div className="text-right">
                   <div className="text-xs text-white/40 uppercase font-bold">Drawdown</div>
-                  <div className="text-2xl font-display font-bold text-red-400">8.91%</div>
+                  <div className="text-2xl font-display font-bold text-red-400">10.46%</div>
                 </div>
               </div>
             </div>
@@ -401,14 +401,14 @@ export default function App() {
               {/* Stats Grid Visualization */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { label: "Profit Factor", value: "1.42", icon: TrendingUp, color: "text-neon-cyan" },
-                  { label: "Recovery Factor", value: "2.87", icon: Activity, color: "text-neon-purple" },
-                  { label: "Win Rate", value: "71.58%", icon: Target, color: "text-emerald-400" },
-                  { label: "Total Trades", value: "104,947", icon: Users, color: "text-white" },
-                  { label: "Gross Profit", value: "$287,868", icon: DollarSign, color: "text-neon-cyan" },
-                  { label: "Gross Loss", value: "-$202,800", icon: TrendingDown, color: "text-red-400" },
-                  { label: "Max Drawdown", value: "8.91%", icon: AlertCircle, color: "text-orange-400" },
-                  { label: "Sharpe Ratio", value: "0.90", icon: BarChart3, color: "text-blue-400" }
+                  { label: "Profit Factor", value: "1.24", icon: TrendingUp, color: "text-neon-cyan" },
+                  { label: "Recovery Factor", value: "2.21", icon: Activity, color: "text-neon-purple" },
+                  { label: "Win Rate", value: "79.41%", icon: Target, color: "text-emerald-400" },
+                  { label: "Total Trades", value: "206,836", icon: Users, color: "text-white" },
+                  { label: "Gross Profit", value: "$1,848,892", icon: DollarSign, color: "text-neon-cyan" },
+                  { label: "Gross Loss", value: "-$1,485,553", icon: TrendingDown, color: "text-red-400" },
+                  { label: "Max Drawdown", value: "10.46%", icon: AlertCircle, color: "text-orange-400" },
+                  { label: "Sharpe Ratio", value: "0.97", icon: BarChart3, color: "text-blue-400" }
                 ].map((stat, i) => (
                   <div key={i} className="glass p-4 rounded-xl border-white/5">
                     <div className="flex items-center gap-2 mb-2">
@@ -501,7 +501,7 @@ export default function App() {
                 <div className="text-center">
                   <Cpu className="w-24 h-24 text-neon-cyan mx-auto mb-6 neon-glow" />
                   <div className="text-3xl font-display font-bold tracking-tighter">HEOHUNTER <span className="text-neon-cyan">EA</span></div>
-                  <div className="text-white/40 text-sm uppercase tracking-widest mt-2">Active Algorithm v1.10</div>
+                  <div className="text-white/40 text-sm uppercase tracking-widest mt-2">Active Algorithm v1.11</div>
                 </div>
               </div>
             </div>
