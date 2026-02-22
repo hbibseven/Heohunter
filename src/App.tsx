@@ -500,8 +500,8 @@ export default function App() {
                 />
                 <div className="text-center">
                   <Cpu className="w-24 h-24 text-neon-cyan mx-auto mb-6 neon-glow" />
-                  <div className="text-3xl font-display font-bold tracking-tighter">HEOHUNTER <span className="text-neon-cyan">CORE</span></div>
-                  <div className="text-white/40 text-sm uppercase tracking-widest mt-2">Active Algorithm V2.5</div>
+                  <div className="text-3xl font-display font-bold tracking-tighter">HEOHUNTER <span className="text-neon-cyan">EA</span></div>
+                  <div className="text-white/40 text-sm uppercase tracking-widest mt-2">Active Algorithm v1.10</div>
                 </div>
               </div>
             </div>
