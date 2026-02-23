@@ -220,7 +220,7 @@ export default function App() {
                 <Zap className="w-4 h-4" /> Next-Gen Trading Algorithm
               </div>
               <h1 className="text-5xl md:text-7xl font-display font-bold leading-[0.9] mb-6">
-                Dari $100 Jadi <span className="text-neon-cyan">8x Lipat</span> Tanpa Sentuh Chart
+                Dari $100 Jadi <span className="text-neon-cyan">36x Lipat</span> Tanpa Sentuh Chart!
               </h1>
               <p className="text-xl text-white/70 mb-10 max-w-xl leading-relaxed">
                 Sistem Otomatis yang Eksekusi,<br />Market 24 Jam Tanpa Emosi.
@@ -450,7 +450,7 @@ export default function App() {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-3xl font-display font-bold italic text-neon-purple">Anda tidak sendirian.</h3>
+            <h3 className="text-3xl font-display font-bold italic text-neon-purple">Anda tidak sendirian!.</h3>
             <p className="text-xl text-white/60 leading-relaxed max-w-2xl mx-auto">
               Mayoritas trader gagal bukan karena strategi, melainkan karena <span className="text-white font-bold">emosi dan ketidakdisiplinan</span>.
             </p>
