@@ -134,7 +134,7 @@ const PricingCard = ({
       </div>
     )}
     <h3 className="text-xl font-display font-bold mb-2 uppercase tracking-wider">{title}</h3>
-    <div className="text-4xl font-display font-bold mb-8 text-neon-cyan">
+    <div className="text-2xl font-display font-bold mb-8 text-neon-cyan">
       {price}
     </div>
     <ul className="space-y-4 mb-10 flex-grow">
