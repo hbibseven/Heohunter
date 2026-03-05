@@ -553,7 +553,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <PricingCard 
               title="Basic License"
-              price="Rp 500.000"
+              price="Rp 750.000"
               features={[
                 "Lock 1 Account",
                 "Lifetime License",
@@ -564,7 +564,7 @@ export default function App() {
             />
             <PricingCard 
               title="Pro License"
-              price="Rp 1.000.000"
+              price="Rp 1.500.000"
               features={[
                 "Lock 3 Account",
                 "Lifetime License",
@@ -576,7 +576,7 @@ export default function App() {
             />
             <PricingCard 
               title="Advanced License"
-              price="Rp 5.000.000"
+              price="Rp 10.000.000"
               features={[
                 "Lock 1 Account",
                 "Open Setting Access",
@@ -587,7 +587,7 @@ export default function App() {
             />
             <PricingCard 
               title="Premium Source"
-              price="Rp 50.000.000"
+              price="Rp 100.000.000"
               features={[
                 "Full Source Code",
                 "Commercial Use Rights",
