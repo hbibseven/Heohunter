@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket } from 'lucide-react';
+import { Rocket, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <a 
+           <a 
             href="#pricing" 
             className="hidden sm:block px-6 py-2 bg-neon-cyan text-space-black font-bold rounded-full text-sm hover:scale-105 transition-transform neon-glow"
           >
