@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, Globe } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -28,22 +28,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* Language Switcher */}
-          <div className="flex items-center bg-white/5 rounded-full p-1 border border-white/10">
-            <Link 
-              to="/" 
-              className={`px-3 py-1 rounded-full text-[10px] font-bold transition-all ${!isEnglish ? 'bg-neon-cyan text-space-black' : 'text-white/50 hover:text-white'}`}
-            >
-              ID
-            </Link>
-            <Link 
-              to="/en" 
-              className={`px-3 py-1 rounded-full text-[10px] font-bold transition-all ${isEnglish ? 'bg-neon-cyan text-space-black' : 'text-white/50 hover:text-white'}`}
-            >
-              EN
-            </Link>
-          </div>
-
           <a 
             href="#pricing" 
             className="hidden sm:block px-6 py-2 bg-neon-cyan text-space-black font-bold rounded-full text-sm hover:scale-105 transition-transform neon-glow"
