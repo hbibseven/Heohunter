@@ -156,7 +156,7 @@ const FAQItem = ({ question, answer }: { question: string, answer: string }) => 
   );
 };
 
-export default function HomeID() {
+export default function HomeEN() {
   return (
     <div className="min-h-screen bg-space-black overflow-x-hidden">
       {/* Hero Section */}
